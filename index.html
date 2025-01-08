@@ -7,6 +7,8 @@
     <meta name="description" content="Projeto Portfólio">
     <meta name="author" content="Generation Brasil">
     <meta name="keywords" content="HTML, CSS, JavaScript">
+    <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Meu Perfil</title>
 </head>
 
@@ -14,15 +16,15 @@
     <!-- Cabeçalho da Página (header) -->
     <header>
         <!-- Div Conteudo do Cabeçalho -->
-        <div id="header_content">
+        <div class="header_content flex">
             <!-- Titulo do Cabeçalho -->
-            <div id="titulo">
+            <div class="titulo">
                 <!-- Seu nome -->
                 <h1>Sansão Dembué Vieira</h1>
             </div>
 
             <!-- Conteudo do Menu da Página (header) -->
-            <div id="menu">
+            <div class="menu">
                 <!-- Menu da Página -->
                 <nav>
                     <!-- Marcadores não ordenados + links -->
@@ -43,42 +45,48 @@
     <main>
 
         <!-- Seção Sobre você -->
-        <section id="about">
+        <section class="about flex_start">
 
             <!-- Título da Seção -->
             <h2>Sobre o Sansão</h2>
 
             <!-- Conteúdo da Seção -->
-            <div id="conteudo">
+            <div class="conteudo">
 
                 <!-- Imagem do criador do conteúdo -->
-                <img src="./assets/img/eu.jpg" alt="Foto do criador desse conteudo" />
+                <img src="./assets/img/eu.jpg" alt="Foto do criador desse conteudo" class="img_profile" />
 
                 <!-- Texto sobre o criador do conteúdo -->
-                <article id="sobre_texto">
+                <article class="sobre_texto">
                     <p>
-                        Analista de Sistemas com experiência em Java, Hibernate, JPA, JavaScript, TypeScript, React, 
-                        Angular e MySQL. Desenvolvi o frontend de uma aplicação crítica para NOC e SOC, e refatorei o fluxo 
-                        de login para dispositivos móveis, melhorando a experiência do usuário. Criei uma API para um Blog 
-                        Pessoal. Participei do Bootcamp da Generation Brasil, adquirindo habilidades em comunicação, 
-                        orientação aos detalhes, orientação ao futuro, proatividade e trabalho em equipe. Atuo no 
-                        desenvolvimento de soluções end-to-end, focando em interfaces acessíveis e responsivas. Colaboro com 
-                        equipes de UX, DevOps, QA e Produto. Possuo conhecimentos em Microsoft Azure Cloud Services, 
-                        Docker e Kubernetes.
-
+                        Analista de Sistemas com experiência em Java, Hibernate, JPA, JavaScript, TypeScript, React,
+                        Angular e MySQL. Desenvolvi o frontend de uma aplicação crítica para NOC e SOC, e refatorei o
+                        fluxo
+                        de login para dispositivos móveis, melhorando a experiência do usuário. Criei uma API para um
+                        Blog
+                        Pessoal.
                     </p>
+                    <p>Participei do Bootcamp da Generation Brasil, adquirindo habilidades em comunicação,
+                        orientação aos detalhes, orientação ao futuro, proatividade e trabalho em equipe. Atuo no
+                        desenvolvimento de soluções end-to-end, focando em interfaces acessíveis e responsivas. Colaboro
+                        com
+                        equipes de UX, DevOps, QA e Produto. Possuo conhecimentos em Microsoft Azure Cloud Services,
+                        Docker e Kubernetes.
+                    </p>
+
+
                 </article>
             </div>
         </section>
 
         <!-- Seção contendo um vídeo de sua preferência -->
-        <section id="video">
+        <section class="video flex_start">
 
             <!-- Título da Seção -->
             <h2>Meu vídeo favorito:</h2>
 
             <!-- Vídeo da Seção -->
-            <div class="youtube">
+            <div class="youtube flex">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Z3_mtwMMuGI?si=F1QiiDYSfsPG3nF0"
                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -86,50 +94,13 @@
 
         </section>
 
-        <!-- Seção Formulário de Contato e Redes Sociais -->
-        <section id="contact">
-
-            <!-- Seção do Formulário-->
-            <form action="#" method="submit">
-                <label for="nome">Nome: </label>
-                <input id="nome" type="text" name="name" placeholder="Digite seu nome" required />
-                <span id="txtNome"></span>
-
-                <label for="email">Email: </label>
-                <input id="email" type="email" name="email" placeholder="Digite seu email" required />
-                <span id="txtEmail"></span>
-
-                <label for="subject">Assunto: </label>
-                <input id="subject" type="text" name="subject" placeholder="Digite o título da mensagem" required />
-                <span id="txtSubject"></span>
-
-                <label for="message">Mensagem: </label>
-                <textarea id="message" name="message" placeholder="Digite sua mensagem" required>
-					</textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
-
-            <!-- Seção do Google Maps -->
-            <article id="mapa">
-
-                <div id="endereco">
-                    <p>Av. Rio Pequeno</p>
-                    <p>São Paulo - SP</p>
-                </div>
-
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0513608421206!2d-46.751559624842336!3d-23.566598778796198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce55e0360cb05d%3A0x948924629a5b8ec2!2sRua%20Manoel%20Patr%C3%ADcio%20Menezes%2C%20112%20-%20Rio%20Pequeno%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005361-050!5e0!3m2!1spt-PT!2sbr!4v1736192224623!5m2!1spt-PT!2sbr" width="400" height="250" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false"
-                tabindex="0" id="mapa"></iframe>
-            </article>
-        </section>
-
     </main>
 
     <!-- Rodapé da Página (footer) -->
-    <footer>
-        <footer>
+    <footer class="flex">
+
             <!-- Seção de Contato - Redes Sociais -->
-            <section id="redes_sociais">
+            <section class="redes_sociais">
                 <a href="https://www.linkedin.com/in/sansaovieira/">
                     <img src="assets/img/linkedin.svg" alt="LinkedIn" />
                 </a>
