@@ -40,6 +40,18 @@ cd my-portfolio
 - `script.js`: JavaScript file with additional functionality.
 - `assets/`: Folder containing images and other media files.
 
+## Project in Action
+
+Here are some images showcasing the project:
+
+<p align="center"> 
+ <img src="https://github.com/sansaovieira/my_portfolio/blob/main/assets/img/imagem-home.PNG" width="400" height="200" alt="Home Page">
+ <img src="https://github.com/sansaovieira/my_portfolio/blob/main/assets/img/iamgem-contato.PNG" width="400" height="200" alt="Contact Page"> 
+</p>
+
+You can visit the project [here](https://sansaovieira.github.io/my_portfolio/).
+
+
 ## Contribution
 
 This project was developed as part of my studies at the Generation bootcamp.
