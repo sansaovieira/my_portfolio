@@ -25,7 +25,7 @@
 			<!-- Titulo do Cabeçalho -->
 			<div class="titulo">
 				<!-- Seu nome -->
-				<h1>Generation Brasil</h1>
+				<h1>Sansão Dembué Vieira</h1>
 			</div>
 
 			<!-- Conteudo do Menu da Página (header) -->
@@ -50,13 +50,13 @@
 	<main>
 		<div class="contact flex">
 			<!-- Seção Formulário de Contato-->
-			<form action="#" method="submit">
-				<label for="nome">Nome: </label>
-				<input id="nome" type="text" name="name" placeholder="Digite seu nome" />
+			<form action="#" method="submit" id="formulario">
+				<label for="name">Nome: </label>
+				<input id="name" type="text" name="name" placeholder="Digite seu nome" />
 				<span id="txtNome"></span>
 
 				<label for="email">Email: </label>
-				<input id="email" type="email" name="email" placeholder="Digite seu email" />
+				<input id="email" type="text" name="email" placeholder="Digite seu email" />
 				<span id="txtEmail"></span>
 
 				<label for="subject">Assunto: </label>
@@ -73,14 +73,14 @@
 			<section class="mapa flex_start">
 
 				<div class="endereco">
-					<p>Av. Paulista, 100</p>
+					<p>Av. Rio Pequeno, São Paulo - SP, 05379-000</p>
 					<p>São Paulo - SP</p>
 				</div>
 
 				<iframe
 					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.106696296001!2d-46.65390548535577!3d-23.564611167596592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7f481fd9f%3A0x9982bfde4df54830!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1594056507065!5m2!1spt-BR!2sbr"
 					width="400" height="250" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false"
-					tabindex="0" id="mapa">
+					tabindex="0" id="mapa" onmousemove="mapaZoom()" onmouseout="mapaNormal()">
 				</iframe>
 			</section>
 		</div>
@@ -90,19 +90,21 @@
 	<footer class="flex">
 		<!-- Seção de Contato - Redes Sociais-->
 		<section class="redes_sociais">
-			<a href="">
+			<a href="https://www.linkedin.com/in/sansaovieira/">
 				<img src="assets/img/linkedin.svg" alt="LinkedIn" class="social_icon" />
 			</a>
-			<a href="">
+			<a href="https://github.com/sansaovieira">
 				<img src="assets/img/github.svg" alt="Github" class="social_icon" />
 			</a>
-			<a href="">
+			<a href="https://www.instagram.com/iams.slow/">
 				<img src="assets/img/instagram.svg" alt="Instagram" class="social_icon" />
 			</a>
 		</section>
 
 		<h3>Feito com 🧡 por Sansão D. Vieira - 2025</h3>
 	</footer>
+	<!-- Script JavaScript-->
+	<script src="./assets/js/script.js"></script>
 </body>
 
 </html>
