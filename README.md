@@ -13,8 +13,6 @@ This project aims to showcase my web development skills and serve as a showcase 
 
 ## Technologies Used
 
-## Technologies Used
-
 <p align="center">
  <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" width="150" height="150" alt="HTML Logo" style="margin-right: 10px;">
  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" width="150" height="150" alt="CSS Logo" style="margin-right: 10px;">
